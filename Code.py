@@ -19,12 +19,14 @@ def on_press(key, abortKey='esc'):
 
 def dongu():
     while True:
-        sleep(random.randint(500, 600))
-        pyautogui.moveTo(x, y-100)
+        sleep(random.randint(450, 600))
+        randomNumber = random.randint(100, 200)
+        pyautogui.moveTo(x, y-randomNumber)
         sleep(1)
         pyautogui.click()
-        sleep(random.randint(500, 600))
-        pyautogui.moveTo(x, y+100)
+        sleep(random.randint(450, 600))
+        randomNumber = random.randint(100, 200)
+        pyautogui.moveTo(x, y+randomNumber)
         sleep(1)
         pyautogui.click()
 
